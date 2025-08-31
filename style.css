@@ -3,18 +3,7 @@
       color: white;
   }
 
-  /* Mobile first */
-  .container {
-      display: flex;
-      flex-direction: column;
-  }
-
-  /* For larger screens */
-  @media (min-width: 768px) {
-      .container {
-          flex-direction: row;
-      }
-  }
+ 
 
 
   * {
