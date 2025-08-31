@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Kohinoor</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Projects Section */
+    .projects-section {
+      padding: 80px 10%;
+      background-color: rgb(0, 0, 33);
+      text-align: center;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card h3 {
+      color: rgb(135, 61, 205);
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      display: inline-block;
+      text-decoration: none;
+      background: rgb(135, 61, 205);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .project-card a:hover {
+      background: rgb(160, 90, 230);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(135, 61, 205, 0.4);
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Entrance Animations */
+    .animate-heading {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .animate-card {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .animate-card.delay {
+      animation-delay: 0.3s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+   .section-title {
+    color: rgb(135, 61, 205);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+
+    
+}
+
+    
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Kohinoor's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a class="underline-effect" href="index.html">Home</a></li>
+          <li><a class="underline-effect" href="about.html">About</a></li>
+          <li><a class="underline-effect" href="services.html">Services</a></li>
+          <li><a class="underline-effect active" href="project.html">Projects</a></li>
+          <li><a class="underline-effect" href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h1 class="section-title">My Projects</h1>
+    <div class="projects-container">
+      
+      <div class="project-card animate-card">
+        <img src="developer.png" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>A modern responsive personal portfolio showcasing skills and services.</p>
+        <a href="/">View Project</a>
+      </div>
+
+      <div class="project-card animate-card delay">
+        <img src="developer.png" alt="Project 2">
+        <h3>E-commerce Store</h3>
+        <p>An online shopping platform with cart, product pages, and secure checkout.</p>
+        <a href="/">View Project</a>
+      </div>
+
+      <div class="project-card animate-card">
+        <img src="developer.png" alt="Project 3">
+        <h3>Blog Platform</h3>
+        <p>A clean and fast blog website with categories, search, and comments.</p>
+        <a href="/">View Project</a>
+      </div>
+
+      <div class="project-card animate-card delay">
+        <img src="developer.png" alt="Project 4">
+        <h3>UI Dashboard</h3>
+        <p>A data visualization dashboard with charts and interactive features.</p>
+        <a href="/">View Project</a>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div id="iii" class="footerfirst">
+        Copyright &#169; kohinoorsportfolio.com | All Rights Reserved
+      </div>
+      <div class="footersecond">
+
+
+      </div>
+      <div class="footerthird"></div>
+      <div class="footerfourth"></div>
+    </div>
+  </footer>
+</body>
+</html>
