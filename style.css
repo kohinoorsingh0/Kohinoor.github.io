@@ -275,3 +275,96 @@ img {
     font-size: 0.9rem;
   }
 }
+/* ===============================
+   ✅ Responsive Fixes
+   =============================== */
+
+/* Make all images scale */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For tablets (≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .first {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .leftsection {
+    margin: 20px;
+    font-size: 2rem;
+  }
+
+  .rightsection {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .rightsection img {
+    max-width: 350px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* For mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .left {
+    font-size: 1.2rem;
+  }
+
+  .leftsection {
+    margin: 15px;
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .leftsection .btn {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
