@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Kohinoor</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Services Section */
+    .services-section {
+      padding: 80px 10%;
+      background-color: rgb(0, 0, 33);
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-size: 2.5rem;
+      color: rgb(135, 61, 205);
+      margin-bottom: 40px;
+      
+    }
+
+    /* Container */
+    .services-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    /* Card */
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px 25px;
+      max-width: 300px;
+      opacity: 0;
+      transform: translateY(40px) scale(0.9);
+      animation: cardFadeUp 0.8s ease forwards;
+    }
+
+    /* Delay for staggered animation */
+    .service-card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .service-card:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .service-card:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    .service-card:nth-child(5) {
+      animation-delay: 0.8s;
+    }
+
+    .service-card h3 {
+      color: rgb(135, 61, 205);
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* Hover effect */
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 30px rgba(135, 61, 205, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Animations */
+    @keyframes cardFadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes glowText {
+      from {
+        text-shadow: 0 0 10px rgb(135, 61, 205), 0 0 20px rgba(135, 61, 205, 0.6);
+      }
+
+      to {
+        text-shadow: 0 0 20px rgb(155, 81, 225), 0 0 40px rgba(155, 81, 225, 0.9);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left"> Kohinoor's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a class="underline-effect" href="index.html">Home</a></li>
+          <li><a class="underline-effect" href="about.html">About</a></li>
+          <li><a class="underline-effect active" href="services.html">Services</a></li>
+          <li><a class="underline-effect" href="project.html">Project</a></li>
+          <li><a class="underline-effect" href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>My Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>I build fast, responsive, and modern websites tailored to your needs using the latest technologies.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI / UX Design</h3>
+        <p>I design clean and intuitive interfaces with a focus on user-friendly navigation and smooth experiences.</p>
+      </div>
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>I create eye-catching visuals, logos, and designs that align with your brand identity and goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Projects</h3>
+        <p>From idea to launch, I help bring unique project concepts to life with scalable and impactful solutions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Maintenance & Support</h3>
+        <p>I provide ongoing website updates, bug fixes, and optimization to keep your projects running smoothly.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div id="iii" class="footerfirst">
+        Copyright &#169; kohinoorsportfolio.com | All Rights Reserved
+      </div>
+      <div class="footersecond">
+
+
+      </div>
+      <div class="footerthird"></div>
+      <div class="footerfourth"></div>
+    </div>
+  </footer>
+</body>
+
+</html>
