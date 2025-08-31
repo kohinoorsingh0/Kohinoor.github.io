@@ -3,7 +3,18 @@
       color: white;
   }
 
- 
+  /* Mobile first */
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* For larger screens */
+  @media (min-width: 768px) {
+      .container {
+          flex-direction: row;
+      }
+  }
 
 
   * {
@@ -188,3 +199,79 @@
   .underline-effect.active::after {
       width: 100%;
   }
+/* ===============================
+   ✅ Responsive Fixes (added below)
+   =============================== */
+
+/* Make images scale */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For tablets and smaller (≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .first {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .leftsection {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .rightsection {
+    justify-content: center;
+  }
+
+  .rightsection img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* For mobile (≤ 480px) */
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .left {
+    font-size: 1.2rem;
+  }
+
+  .leftsection {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+
+  .leftsection .btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
