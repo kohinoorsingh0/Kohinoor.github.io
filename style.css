@@ -1,0 +1,201 @@
+  body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+  }
+
+  /* Mobile first */
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* For larger screens */
+  @media (min-width: 768px) {
+      .container {
+          flex-direction: row;
+      }
+  }
+
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+  }
+
+  nav ul {
+      display: flex;
+      justify-content: center;
+  }
+
+  nav ul li {
+      list-style: none;
+      margin: 0 23px;
+
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+
+  }
+
+  nav ul li a:hover {
+      color: rgb(123, 123, 223);
+      font-size: 1.04rem;
+  }
+
+  .left {
+      font-size: 1.5rem;
+  }
+
+  .first {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+  }
+
+  .leftsection {
+
+      font-size: 3rem;
+      margin: 90px;
+
+  }
+
+  .rightsection {
+      display: flex;
+      justify-content: flex-end;
+      /* Pushes image to the right */
+      align-items: center;
+  }
+
+  .rightsection img {
+      width: 80%;
+      max-width: 500px;
+      /* Prevents it from getting too big */
+
+
+  }
+
+  img .first div {
+      width: 30%;
+  }
+
+  .purple {
+      color: rgb(135, 61, 205);
+  }
+
+  #element {
+      color: rgb(135, 61, 205);
+  }
+
+  .leftsection .btn {
+      margin-top: 50px;
+      padding: 12px;
+
+      color: white;
+      background-color: #060645;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+
+
+  }
+
+  .leftsection .btn:hover {
+      background-color: white;
+      color: #060645;
+      transform: scale(1.05);
+      /* slight zoom */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      /* shadow effect */
+  }
+
+  footer {
+      background-color: rgb(18, 18, 62);
+      height: 70px;
+
+
+  }
+
+  .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-around;
+  }
+
+  .footerfirst {
+      text-align: center;
+      width: 100%;
+  }
+
+  .float-scale {
+      animation: floatScale 4s ease-in-out infinite;
+  }
+
+  @keyframes floatScale {
+      0% {
+          transform: translateY(0px) scale(1);
+      }
+
+      50% {
+          transform: translateY(-15px) scale(1.05);
+      }
+
+      100% {
+          transform: translateY(0px) scale(1);
+      }
+  }
+
+  nav ul li a.active {
+      color: rgb(135, 61, 205);
+      /* Current page highlight */
+  }
+
+  /* Reusable underline hover effect */
+  /* Reusable underline hover + active effect */
+  .underline-effect {
+      position: relative;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+
+  /* Hover underline */
+  .underline-effect::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: rgb(135, 61, 205);
+      transition: width 0.3s ease-in-out;
+  }
+
+  .underline-effect:hover::after {
+      width: 100%;
+  }
+
+  /* Hover color */
+  .underline-effect:hover {
+      color: rgb(135, 61, 205);
+  }
+
+  /* Active link (current page) */
+  .underline-effect.active {
+      color: rgb(135, 61, 205);
+  }
+
+  .underline-effect.active::after {
+      width: 100%;
+  }
